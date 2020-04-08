@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  http_task_app1:
+    build: ./http_task_app1
+    ports:
+      - target: 5000
+        published: 5000
+        protocol: tcp
+  http_task_app2:
+    build: ./http_task_app2
+    ports:
+      - target: 5001
+        published: 5001
+        protocol: tcp
+
